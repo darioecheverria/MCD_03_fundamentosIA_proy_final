@@ -56,16 +56,7 @@ jupyter execute 01_entrenamiento.ipynb     # opcional: vuelve a entrenar
 streamlit run app.py
 ```
 
-Para añadir una ciudad **solo a la app**, copia sus geopaquetes a `datos/`. Para **entrenar** con ella, añádela además a `CIUDADES` en `01_entrenamiento.ipynb` y vuelve a ejecutarlo.
-
-## Despliegue en Streamlit Community Cloud
-
-1. Sube esta carpeta a un repositorio **público** de GitHub, con `app.py` en la raíz.
-2. En <https://share.streamlit.io>, crea una app nueva e indica el repositorio, la rama y `app.py` como archivo principal.
-3. En la configuración avanzada elige **Python 3.13**, la versión con la que se entrenó el modelo.
-4. Despliega. La primera instalación tarda unos minutos por geopandas.
-
-Si cambias de versión de Python o de scikit-learn, vuelve a ejecutar `01_entrenamiento.ipynb` en ese entorno y sube el nuevo `paquete.joblib`.
+Para añadir una ciudad **solo a la app**, se deben copiar sus geopaquetes a `datos/`. Para **entrenar** con ella, añádela además a `CIUDADES` en `01_entrenamiento.ipynb` y vuelve a ejecutarlo.
 
 ## Límites del modelo
 
